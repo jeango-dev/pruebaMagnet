@@ -1,0 +1,80 @@
+{
+  "roles": [
+    {
+      "id": 1,
+      "name": "Backend"
+    },
+    {
+      "id": 2,
+      "name": "Frontend"
+    }
+  ],
+  "resources": [
+    {
+      "id": 1,
+      "name": "Juan Backend",
+      "costPerPeriod": 5
+    },
+    {
+      "id": 2,
+      "name": "Pedro Frontend",
+      "costPerPeriod": 5
+    },
+    {
+      "id": 3,
+      "name": "Diego Fullstack",
+      "costPerPeriod": 8
+    },
+    {
+      "id": 4,
+      "name": "Miguel Backend",
+      "costPerPeriod": 4
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Project A - Stage 1",
+      "startPeriod": 0,
+      "resources": [
+        {
+          "startOffset": 0,
+          "duration": 10,
+          "resourceId": 1,
+          "roleId": 1
+        },
+        {
+          "startOffset": 5,
+          "duration": 5,
+          "resourceId": 2,
+          "roleId": 2
+        },
+        {
+          "startOffset": 10,
+          "duration": 5,
+          "resourceId": 1,
+          "roleId": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Project B - Stage 3",
+      "startPeriod": 6,
+      "resources": [
+        {
+          "startOffset": 0,
+          "duration": 10,
+          "resourceId": 4,
+          "roleId": 1
+        },
+        {
+          "startOffset": 5,
+          "duration": 10,
+          "resourceId": 3,
+          "roleId": 2
+        }
+      ]
+    }
+  ]
+}
